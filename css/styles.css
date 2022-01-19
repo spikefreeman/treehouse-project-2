@@ -1,10 +1,17 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     margin: auto;
     max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #093145;
 }
 
 ul{
@@ -14,7 +21,17 @@ ul{
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
+    color: white;
 }
+
+html, body {
+    height: 100%;
+}
+
+
+/* Header */
+
 
 nav {
     font-family: "Roboto", Arial, Verdana;
@@ -50,7 +67,66 @@ h1 a, .top-nav a {
     text-transform: uppercase;
 }
 
-/* screen > 768px */
+
+/* Content */
+
+
+.container {
+    max-width: 1100px;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.col {
+    margin: 10px;
+    min-height: 250px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.box-1{
+    background-color: #093145;
+}
+
+.box-2{
+    background-color: #3C6478;
+}
+
+.box-3{
+    background-color: #107896;
+}
+
+.box-4{
+    background-color: #829356;
+}
+
+.box-5{
+    background-color: #C2571A;
+}
+
+.box-6{
+    background-color: #9A2617;
+}
+
+
+/* Footer */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    background-color: #107896;
+}
+
+/* Mid Size Screen > 768px */
+
 
 @media (min-width: 786px) {
     .top-nav{
@@ -71,5 +147,36 @@ h1 a, .top-nav a {
     .top-nav a {
         color: #fff;
     }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex-basis: calc(50% - 20px);
+    }
     
+}
+
+
+/* Wide Screen > 1024px*/
+
+
+@media (min-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-nav,
+    .top-nav li {
+        width: initial;
+        margin-bottom: 0;
+    }
+
+    .col {
+        flex-basis: calc(33.333% - 20px);
+    }
 }
