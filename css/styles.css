@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     color: black;
-    background-color: #093145;
+    background-color: #E5FFDE;
 }
 
 ul{
@@ -37,7 +37,7 @@ nav {
     font-family: "Roboto", Arial, Verdana;
     font-weight: 400;
     letter-spacing: 0.5em;
-    background-color: #829356;
+    background-color: #F5B700;
     padding: 25px;
 }
 
@@ -50,7 +50,7 @@ h1, .top-nav {
 }
 
 h1 a, .top-nav a {
-    color: #000;
+    color: #000500;
 }
 
 .top-nav {
@@ -60,7 +60,7 @@ h1 a, .top-nav a {
 .top-nav li {
     padding: 10px 0;
     margin: 5px auto;
-    background-color: #fff;
+    background-color: #BEA8AA;
 }
 
 .top-nav a {
@@ -88,7 +88,7 @@ h1 a, .top-nav a {
 }
 
 .box-1{
-    background-color: #093145;
+    background-color: #000500;
 }
 
 .box-2{
@@ -122,7 +122,11 @@ footer {
     margin-top: auto;
     padding: 0 20px;
     height: 100px;
-    background-color: #107896;
+    background-color: #F5B700;
+}
+
+.full {
+    display: none;
 }
 
 /* Mid Size Screen > 768px */
@@ -155,6 +159,15 @@ footer {
 
     .col {
         flex-basis: calc(50% - 20px);
+    }
+
+    .top {
+        display: none;
+    }
+
+    .full {
+        display: inline-block;
+        margin-left: 20px;
     }
     
 }
