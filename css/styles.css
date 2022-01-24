@@ -29,6 +29,9 @@ html, body {
     height: 100%;
 }
 
+h2 {
+    text-align: center;
+}
 
 /* Header */
 
@@ -67,6 +70,16 @@ h1 a, .top-nav a {
     text-transform: uppercase;
 }
 
+#profile {
+    max-width: 100%;
+    padding: 25px;
+}
+
+nav p {
+    letter-spacing: normal;
+    align-content: flex-start;
+}
+
 
 /* Content */
 
@@ -84,7 +97,13 @@ h1 a, .top-nav a {
     color: white;
     text-align: center;
     letter-spacing: 1px;
-    padding-top: 5px;
+    padding-top: 0px; 
+}
+
+.container img {
+    width: 100%;
+    padding: -5px;
+    ;
 }
 
 .box-1{
@@ -109,6 +128,10 @@ h1 a, .top-nav a {
 
 .box-6{
     background-color: #9A2617;
+}
+
+p {
+    padding: 0px 5px 5px;
 }
 
 
