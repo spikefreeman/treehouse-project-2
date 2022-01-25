@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body{
@@ -11,7 +12,8 @@ body{
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     color: black;
-    background-color: #E5FFDE;
+    background-color: #ffffff;
+    min-width: 320px;
 }
 
 ul{
@@ -22,7 +24,7 @@ ul{
 a {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: #4a4a4a;
 }
 
 html, body {
@@ -31,6 +33,7 @@ html, body {
 
 h2 {
     text-align: center;
+    padding-top: 10px;
 }
 
 /* Header */
@@ -39,8 +42,8 @@ h2 {
 nav {
     font-family: "Roboto", Arial, Verdana;
     font-weight: 400;
-    letter-spacing: 0.5em;
-    background-color: #F5B700;
+
+    background-color: #fafafa;
     padding: 25px;
 }
 
@@ -63,7 +66,8 @@ h1 a, .top-nav a {
 .top-nav li {
     padding: 10px 0;
     margin: 5px auto;
-    background-color: #BEA8AA;
+    background-color: #ffffff;
+    font-weight: bold;
 }
 
 .top-nav a {
@@ -94,40 +98,46 @@ nav p {
 .col {
     margin: 10px;
     min-height: 250px;
-    color: white;
+    color: #4a4a4a;
     text-align: center;
-    letter-spacing: 1px;
     padding-top: 0px; 
 }
 
 .container img {
     width: 100%;
     padding: -5px;
-    ;
+}
+
+.container h3{
+    padding: 10px;
+}
+
+.container p{
+    padding-bottom: 5px;
 }
 
 .box-1{
-    background-color: #000500;
+    background-color: #ffffff;
 }
 
 .box-2{
-    background-color: #3C6478;
+    background-color: #ffffff;
 }
 
 .box-3{
-    background-color: #107896;
+    background-color: #ffffff;
 }
 
 .box-4{
-    background-color: #829356;
+    background-color: #ffffff;
 }
 
 .box-5{
-    background-color: #C2571A;
+    background-color: #ffffff;
 }
 
 .box-6{
-    background-color: #9A2617;
+    background-color: #ffffff;
 }
 
 p {
@@ -137,6 +147,20 @@ p {
 
 /* Footer */
 
+#contact{
+    display: flex;
+    color: #4a4a4a;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #fafafa;
+}
+
+#contact h3 {
+    text-align: center;
+    padding: 2px;
+}
 
 footer {
     display: flex;
@@ -145,7 +169,7 @@ footer {
     margin-top: auto;
     padding: 0 20px;
     height: 100px;
-    background-color: #F5B700;
+    background-color: #fafafa;
 }
 
 .full {
