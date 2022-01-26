@@ -42,9 +42,10 @@ h2 {
 nav {
     font-family: "Roboto", Arial, Verdana;
     font-weight: 400;
-
     background-color: #fafafa;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, .top-nav {
@@ -81,7 +82,11 @@ h1 a, .top-nav a {
 
 nav p {
     letter-spacing: normal;
-    align-content: flex-start;
+    align-self: center;
+}
+
+nav img {
+    align-self: center;
 }
 
 
@@ -89,10 +94,13 @@ nav p {
 
 
 .container {
+    display: flex;
     max-width: 1100px;
     padding: 10px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .col {
@@ -140,6 +148,15 @@ nav p {
     background-color: #ffffff;
 }
 
+.box-contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
+}
+
 p {
     padding: 0px 5px 5px;
 }
@@ -164,17 +181,24 @@ p {
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
-    padding: 0 20px;
+    padding: 20px;
     height: 100px;
     background-color: #fafafa;
 }
 
+/* footer h3 {
+    padding: 20px;
+} */
+
 .full {
     display: none;
 }
+
+
 
 /* Mid Size Screen > 768px */
 
@@ -202,6 +226,7 @@ footer {
     .container {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .col {
@@ -215,6 +240,14 @@ footer {
     .full {
         display: inline-block;
         margin-left: 20px;
+    }
+
+    .nav{
+        flex-direction: row;
+    }
+
+    .nav div {
+        align-self: flex-end;
     }
     
 }
