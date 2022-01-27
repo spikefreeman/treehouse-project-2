@@ -14,20 +14,25 @@
 <body>
     <nav>
 
-        <h1><a href="#">Student Name</a></h1>
+        <div class="hd-title">
+            <h1><a href="#">Student Name</a></h1>
+        </div>  
 
-        <ul class="top-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        
-        
+        <div class="hd-link">
+            <ul class="top-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+             
+        <div class="hd-img">
             <img src="images/responsive-layout-profile.png" alt="Picture of me" id="profile">
+        </div>
 
+        <div class="hd-text">
             <p>Hi! I'm a front end developer who loves responsive desing and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-        
-
+        </div>  
     </nav>
 
     <content>
@@ -36,7 +41,7 @@
 
         <div class="container">
 
-            <h2>Portfolio</h2>
+            <h2 class="title">Portfolio</h2>
 
             <div class="col box-1">
                 <img src="images/portfolio-1.png" alt="Floating Boxes">
@@ -79,8 +84,8 @@
                 <h3>Contact</h3>
                 <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
                 <ul>
-                    <li>Phone: +1 (111) 555-1234</li>
-                    <li>Email: email@yoursite.com</li>
+                    <li><p>Phone <b>+1 (111) 555-1234</b></p></li>
+                    <li><p>Email <b>email@yoursite.com</b></p></li>
                 </ul>
             </div>
 
@@ -90,9 +95,8 @@
 
     <footer>
 
-
-
-        <h2>Spike Freeman</h2>
+        <h3>Spike Freeman</h3>
+        
         <ul class="footer-nav">
             <li class="top"><a href="#top">back to top</a></li>
             <li class="full"><a href="#top">home</a></li>

@@ -33,7 +33,6 @@ html, body {
 
 h2 {
     text-align: center;
-    padding-top: 10px;
 }
 
 /* Header */
@@ -124,6 +123,11 @@ nav img {
     padding-bottom: 5px;
 }
 
+.title {
+    min-height: none;
+    width: 100%;
+}
+
 .box-1{
     background-color: #ffffff;
 }
@@ -152,13 +156,17 @@ nav img {
     display: flex;
     flex-direction: column;
     background-color: #fafafa;
-    justify-content: space-between;
-    padding:0;
-    margin:0;
+    justify-content: center;
+    gap: 20px;
+    flex-grow: 2;
 }
 
 p {
     padding: 0px 5px 5px;
+}
+
+b {
+    padding: 10px;
 }
 
 
@@ -181,18 +189,16 @@ p {
 
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     margin-top: auto;
     padding: 20px;
     height: 100px;
     background-color: #fafafa;
+    border-top: 1px solid whitesmoke;
+
 }
 
-/* footer h3 {
-    padding: 20px;
-} */
 
 .full {
     display: none;
@@ -220,7 +226,7 @@ footer {
     }
 
     .top-nav a {
-        color: #fff;
+        color: black;
     }
 
     .container {
@@ -242,14 +248,24 @@ footer {
         margin-left: 20px;
     }
 
-    .nav{
-        flex-direction: row;
+    nav{
+        /* flex-direction: row; */
+        display: flex;
+        flex-wrap: wrap;
     }
-
+    
     .nav div {
         align-self: flex-end;
     }
     
+    .hd-text{
+        flex: 1 auto;
+    }
+
+    .hd-img{
+        order:2;
+        flex: 1 auto;
+    }
 }
 
 
