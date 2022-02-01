@@ -249,23 +249,31 @@ footer {
     }
 
     nav{
-        /* flex-direction: row; */
+        flex-direction: row; 
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
+
+    
     
     .nav div {
         align-self: flex-end;
     }
-    
-    .hd-text{
-        flex: 1 auto;
-    }
 
     .hd-img{
         order:2;
-        flex: 1 auto;
+        width: 50%; 
     }
+
+    .hd-text{
+        width: 50%;
+    }
+
+    .hd-link{
+        align-self: flex-end;
+    }
+
 }
 
 
