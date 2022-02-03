@@ -84,7 +84,11 @@ nav p {
     align-self: center;
 }
 
-nav img {
+img {
+    align-self: center;
+}
+
+.hd-img {
     align-self: center;
 }
 
@@ -112,7 +116,6 @@ nav img {
 
 .container img {
     width: 100%;
-    padding: -5px;
 }
 
 .container h3{
@@ -124,7 +127,6 @@ nav img {
 }
 
 .title {
-    min-height: none;
     width: 100%;
 }
 
@@ -268,10 +270,20 @@ footer {
 
     .hd-text{
         width: 50%;
+        align-self: flex-start;
+        padding-top: 25px;
     }
 
     .hd-link{
         align-self: flex-end;
+    }
+
+    .hd-title{
+        width: 50%;
+    }
+
+    h1 {
+        text-align: left;
     }
 
 }
