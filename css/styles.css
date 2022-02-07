@@ -250,7 +250,7 @@ footer {
         margin-left: 20px;
     }
 
-    nav{
+    header{
         flex-direction: row; 
         display: flex;
         flex-wrap: wrap;
