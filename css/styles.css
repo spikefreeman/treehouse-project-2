@@ -212,10 +212,10 @@ footer {
 
 
 
-/* Mid Size Screen > 786px */
+/* Mid Size Screen > 768px */
 
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
     .top-nav{
         margin-top: 0;
     }
